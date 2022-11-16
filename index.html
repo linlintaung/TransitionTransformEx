@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation Exercise</title>
+	<style type="text/css">
+		.container{
+			margin-top: 2%;
+			display: flex;
+			margin-left: 30%;
+			margin-right: 30%;
+			justify-content: center;
+			flex-flow: wrap;
+		}
+		.box{
+			margin: 19px;
+			width: 150px;
+			height: 130px;
+			background-color: lightgray;
+			color: white;
+			text-align: center;
+			line-height: 135px;
+		}
+		.secbox{
+			width: 150px;
+			height: 130px;
+			background-color: skyblue;
+			color: white;
+			opacity: 0.5;
+		}
+		.scaleX{
+			transform: scaleX(1.0);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .scaleX{
+			transform: scaleX(1.5);
+		}
+		.scaleY{
+			transform: scaleY(1.0);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .scaleY{
+			transform: scaleY(1.5);
+		}
+		.scale{
+			transform: scale(1.0, 1.0);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .scale{
+			transform: scale(1.5, 1.5);
+		}
+		.translateX{
+			transform: translateX(1);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .translateX{
+			transform: translateX(30px);
+		}
+		.translateY{
+			transform: translateY(1);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .translateY{
+			transform: translateY(30px);
+		}
+		.translate{
+			transform: translate(1, 1);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .translate{
+			transform: translate(30px, 30px);
+		}
+		.matrix{
+			transform: matrix(1, 1, 1, 1);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .matrix{
+			transform: matrix(1, -1, 0, 1, 0, 0);
+		}
+		.rotate{
+			transform: rotate(0deg);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .rotate{
+			transform: rotate(270deg);
+		}
+		.skew{
+			transform: skew(0deg, 0deg);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .skew{
+			transform: skew(30deg, 20deg);
+		}
+		.skewX{
+			transform: skewX(0deg);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .skewX{
+			transform: skewX(30deg);
+		}
+		.skewY{
+			transform: skewY(0deg);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .skewY{
+			transform: skewY(30deg);
+		}
+		.rotateY{
+			transform: perspective(1) scaleZ(1) rotateY(0deg);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .rotateY{
+			transform: perspective(500px) scaleZ(2) rotateY(60deg);
+		}
+		.rotateX{
+			transform: perspective(1) scaleZ(1) rotateX(0deg);
+			transition: transform 0.5s ease;
+		}
+		.box:hover .rotateX{
+			transform: perspective(500px) scaleZ(2) rotateX(60deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="secbox scaleX">scaleX</div>
+		</div>
+		<div class="box">
+			<div class="secbox scaleY">scaleY</div>
+		</div>
+		<div class="box">
+			<div class="secbox scale">scale</div>
+		</div>
+		<div class="box">
+			<div class="secbox translateX">translateX</div>
+		</div>
+		<div class="box">
+			<div class="secbox translateY">translateY</div>
+		</div>
+		<div class="box">
+			<div class="secbox translate">translate</div>
+		</div>
+		<div class="box">
+			<div class="secbox matrix">matrix</div>
+		</div>
+		<div class="box">
+			<div class="secbox rotate">rotate</div>
+		</div>
+		<div class="box">
+			<div class="secbox skew">skew</div>
+		</div>
+		<div class="box">
+			<div class="secbox skewX">skewX</div>
+		</div>
+		<div class="box">
+			<div class="secbox skewY">skewY</div>
+		</div>
+		<div class="box">
+			<div class="secbox rotateY">rotateY</div>
+		</div>
+		<div class="box">
+			<div class="secbox rotateX">rotateX</div>
+		</div>
+	</div>
+</body>
+</html>
